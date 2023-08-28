@@ -31,6 +31,7 @@ import VoucherEdit from "./components/VoucherEdit";
 import VoucherAdd from "./components/VoucherAdd";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import GlobalStyles from "./global-styles";
 // Import other components...
 
 function App() {
@@ -74,6 +75,7 @@ function App() {
 
 	return (
 		<Router>
+			<GlobalStyles />
 			<div className="App">
 				{currentPath[1] === "" ? "" : <Nav key={currentPath} />}
 				{currentPath[1] === "" ? "" : <SideNav />}
